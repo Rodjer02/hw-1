@@ -1,0 +1,65 @@
+.resultForm {
+  position: relative;
+  opacity: 0;
+  background: darkgray;
+  padding: 20px;
+  border-radius: 10px;
+}
+.show {
+  display: "flex";
+  flex-direction: "column";
+  gap: "10px";
+  opacity: 1;
+  transition: all 1s ease-in;
+  margin-top: 40px;
+}
+.modal {
+  display: none;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  opacity: 0;
+  background: darkcyan;
+  padding: 10px;
+  color: bisque;
+  border-radius: 10px;
+  z-index: -2;
+}
+.modal::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 43%;
+  width: 20px;
+  height: 20px;
+  transform: rotate(137deg);
+  background-color: darkcyan;
+  z-index: -1;
+}
+.copyModal {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  top: -33px;
+  right: -9px;
+  background: darkcyan;
+  padding: 10px;
+  color: bisque;
+  border-radius: 10px;
+  z-index: 2;
+}
+.resultForm a {
+  margin-right: 9px;
+  color: bisque;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid bisque;
+  border-radius: 10px;
+}
+.resultForm button {
+  padding: 10px;
+  width: max-content;
+  border-radius: 10px;
+  border: none;
+  background: grey;
+}

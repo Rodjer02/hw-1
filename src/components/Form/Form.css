@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  padding: 20px;
+    background: darkgray;
+    border-radius: 10px;
+
+}
+.form input {
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.form button{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: bisque;
+}
